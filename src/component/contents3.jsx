@@ -9,7 +9,7 @@ export default function contents3() {
 
   const 삼육구 = () => {
     for (let a = 1; a <= 9; a++) {
-      if (a === 3 || a === 6 || a === 9) {
+      if (a % 3 === 0) {
         document.write(a + "단" + "<br/>");
         for (let b = 1; b < 10; b++)
           document.write(a + "*" + b + "=" + a * b + "<br/>");
